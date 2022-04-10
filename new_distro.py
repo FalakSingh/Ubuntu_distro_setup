@@ -11,7 +11,8 @@ help = """
 [+] Use 4 for opening wayland custom conf file
 [+] Use 5 for installing Mac theme
 [+] Use 6 for copying Colloid theme in icons folder
-
+[+] Use 7 for terminal and terminator config
+[+] Use 'all' for executing every command at once
 """
 cwd = os.getcwd()
 if len(args) < 2:
@@ -51,5 +52,4 @@ if len(args) == 2:
 
     if args[1] == "all":
         subprocess.call(full_setup, shell =True)
-
 
